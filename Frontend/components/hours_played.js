@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-function InputGameName() {
-    const [gameName, SetGameName] = useState(null);
+function HoursPlayed() {
+    const [gameHours, SetGameHours] = useState(0);
 
     const handleChange = (e) => {
-        SetGameName(e.target.value);
+        SetGameHours(e.target.value);
     }
     return (
         <div>
@@ -13,8 +13,8 @@ function InputGameName() {
                 <input 
                     type="text" 
                     id="titleText" 
-                    placeholder="Game"
-                    value={gameName}
+                    placeholder="Hours"
+                    value={gameHours}
                     onChange={handleChange}
                 />
             </label>
@@ -22,4 +22,4 @@ function InputGameName() {
     );
 }
 
-export default InputGameName
+export default HoursPlayed

@@ -15,7 +15,7 @@ function GameStatus( { status, selectedValue, setSelectedValue }) {
     );
 }
 
-export default function GameStatusSelection() {
+function GameStatusSelection() {
     const [selectedValue, setSelectedValue] = useState(null);
     return (
         <div>
@@ -30,3 +30,5 @@ export default function GameStatusSelection() {
         </div>
     );
 }
+
+export default GameStatusSelection

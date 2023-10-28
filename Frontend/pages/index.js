@@ -1,6 +1,5 @@
 import React from 'react';
-import GameStatusSelection from '../components/game_status';
-import InputGameName from '../components/game_name';
+import { GameStatusSelection, InputGameName, HoursPlayed } from '../components';
 
 export default function HomePage() {
 
@@ -8,6 +7,7 @@ export default function HomePage() {
         <div>
             <InputGameName />
             <GameStatusSelection />
+            <hours_played/>
         </div>
         
     );
