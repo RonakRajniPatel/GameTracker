@@ -6,7 +6,7 @@ You are also able to keep track of the status of the game as in are you playing 
 
 These details would be comparable to other users in the form of friends. You'll be able to see what your friends thought of a game and other all their key details.
 
-**Priority List**
+## **Priority List**
 Right now, I'm considering a certain order to things.
 
 I need to go to my code and database and make it so that the only two pieces of information I need is the game name and the status. So seperate hours.
