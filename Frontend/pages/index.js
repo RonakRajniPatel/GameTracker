@@ -7,7 +7,7 @@ export default function HomePage() {
         <div>
             <InputGameName />
             <GameStatusSelection />
-            <hours_played/>
+            <HoursPlayed />
         </div>
         
     );

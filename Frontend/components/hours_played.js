@@ -1,15 +1,17 @@
 import { useState } from 'react';
 
 function HoursPlayed() {
-    const [gameHours, SetGameHours] = useState(0);
+    const [gameHours, SetGameHours] = useState(null);
 
-    const handleChange = (e) => {
+
+    function handleChange(e) {
         SetGameHours(e.target.value);
     }
+
     return (
         <div>
             <label>
-                Name 
+                Hours
                 <input 
                     type="text" 
                     id="titleText" 

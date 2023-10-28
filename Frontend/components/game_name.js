@@ -3,9 +3,10 @@ import { useState } from 'react';
 function InputGameName() {
     const [gameName, SetGameName] = useState(null);
 
-    const handleChange = (e) => {
+    function handleChange(e) {
         SetGameName(e.target.value);
     }
+
     return (
         <div>
             <label>
