@@ -15,8 +15,7 @@ function GameStatus( { status, selectedValue, setSelectedValue }) {
     );
 }
 
-function GameStatusSelection() {
-    const [selectedValue, setSelectedValue] = useState(null);
+function GameStatusSelection({selectedValue, setSelectedValue}) {
     return (
         <div>
             <GameStatus status = "Want to play" selectedValue={selectedValue} setSelectedValue={setSelectedValue}/>

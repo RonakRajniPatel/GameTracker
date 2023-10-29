@@ -1,12 +1,6 @@
 import { useState } from 'react';
 
-function HoursPlayed() {
-    const [gameHours, SetGameHours] = useState(null);
-
-
-    function handleChange(e) {
-        SetGameHours(e.target.value);
-    }
+function HoursPlayed({gameHours, SetGameHours}) {
 
     return (
         <div>
@@ -16,8 +10,7 @@ function HoursPlayed() {
                     type="text" 
                     id="titleText" 
                     placeholder="Hours"
-                    value={gameHours}
-                    onChange={handleChange}
+                    onChange={(e) => {SetGameHours(e.target.value)}}
                 />
             </label>
         </div>

@@ -1,22 +1,17 @@
 import { useState } from 'react';
 
-function InputGameName() {
-    const [gameName, SetGameName] = useState(null);
+function InputGameName({gameName, SetGameName}) {
 
-    function handleChange(e) {
-        SetGameName(e.target.value);
-    }
 
     return (
         <div>
             <label>
-                Name 
+                Name
                 <input 
                     type="text" 
                     id="titleText" 
                     placeholder="Game"
-                    value={gameName}
-                    onChange={handleChange}
+                    onChange={(e) => SetGameName(e.target.value)}
                 />
             </label>
         </div>
