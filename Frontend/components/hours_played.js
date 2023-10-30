@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function HoursPlayed({gameHours, SetGameHours}) {
 
     return (
